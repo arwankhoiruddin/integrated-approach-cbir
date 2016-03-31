@@ -11,6 +11,9 @@ imgpath = 'img_test';
 % query image. Change your image name here
 filename = '586.jpg';
 
+% threshold set for minimum eucledian distance that is considered similar
+th = 3.6e3;
+
 imagepath = [imgpath '/' filename];
 imgquery = imread(imagepath);
 
@@ -55,8 +58,7 @@ figure,
 imshow(imread(imagepath));
 title('query image');
 
-% find any image closest with certain threshold
-th = 3.6e3;
+% find any image closest with certain threshold (th variable)
 
 idxchosen = find(modeudist < th);
 
