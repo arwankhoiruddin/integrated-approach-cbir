@@ -8,8 +8,9 @@ clc
 % folder for the images
 imgpath = 'img_test';
 
-% query image
+% query image. Change your image name here
 filename = '586.jpg';
+
 imagepath = [imgpath '/' filename];
 imgquery = imread(imagepath);
 
