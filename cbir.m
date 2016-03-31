@@ -1,12 +1,9 @@
-% %=======================================================================
-% this is the main function 
-% author: Arwan Ahmad Khoiruddin
-% last modified: 30 March 2016
-% %=======================================================================
-
 close all
 clear
 clc
+
+% author: Arwan Ahmad Khoiruddin
+% last modified: 30 March 2016
 
 % folder for the images
 imgpath = 'image.orig';
@@ -27,7 +24,7 @@ imgcm = colorMoment(imgquery);
 % local binary pattern
 imglbp = lbp(imgquery, 3);
 figure, imshow(imgquery);
-figure, imshow(imglbp);
+figure, imshow(imglbp,[]);
 
 % final feature of color
 
