@@ -49,11 +49,20 @@ end
 % find closest object according to eucledian distance
 idxclosest = find(modeudist == min(modeudist));
 
+% show query image
 figure, 
 imshow(imread(imagepath));
 title('query image');
 
-figure, 
-imshow(imread([imgpath '/' imglist(idxclosest).name]));
-title('closest image');
+% find any image closest with certain threshold
+th = 3.6e3;
+
+idxchosen = find(modeudist < th);
+
+for i=1:length(idxchosen)
+    figure, 
+    imshow(imread([imgpath '/' imglist(idxchosen(i)).name]));
+    title(['closest image on rank ' num2str(i)]);
+end
+
 clear filename imgfind imgname i n
