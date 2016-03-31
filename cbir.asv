@@ -1,0 +1,27 @@
+close all
+clear
+clc
+
+% author: Arwan Ahmad Khoiruddin
+% last modified: 30 March 2016
+
+% folder for the images
+imgpath = 'image.orig';
+
+% query image
+filename = '0.jpg';
+imgquery = imread([imgpath '/' filename]);
+
+% get feature vectors
+feature_query = featureVector(imgquery);
+
+% similarity matching using Eucledian distance
+imglist = dir(imgpath);
+fvect = zeros(1,
+for i=3:size(imglist,1)
+    fvect(i)
+end
+
+% choose highest similarity
+
+clear filename

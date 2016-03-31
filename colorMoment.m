@@ -1,4 +1,4 @@
-function colorMoments = colorMoment(Input_Im)
+function colorMoments = colorMoment(image)
 
 % %=======================================================================
 % This function computes the color moment of the input image
@@ -10,12 +10,12 @@ function colorMoments = colorMoment(Input_Im)
 % %=======================================================================
 
 % convert from rgb to hsv
-Input_Im = rgb2hsv(Input_Im);
+Input_Im = rgb2hsv(image);
 
 % extract color channels
-H = double(Input_Im(:, :, 1));
-S = double(Input_Im(:, :, 2));
-V = double(Input_Im(:, :, 3));
+H = double(image(:, :, 1));
+S = double(image(:, :, 2));
+V = double(image(:, :, 3));
 
 % vectorize each channel
 H = H(:);
