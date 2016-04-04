@@ -2,8 +2,11 @@ close all
 clear
 clc
 
-% author: Arwan Ahmad Khoiruddin
-% last modified: 30 March 2016
+% %=======================================================================
+% This function run content based image retrieval using certain threshold
+% Author: Arwan Ahmad Khoiruddin
+% Date modified: 30 March 2016
+% %=======================================================================
 
 % folder for the images
 imgpath = 'img_test';

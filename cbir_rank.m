@@ -2,8 +2,17 @@ close all
 clear
 clc
 
-% author: Arwan Ahmad Khoiruddin
-% last modified: 30 March 2016
+% %=======================================================================
+% This function run content based image retrieval 
+% The output of this program is some images closest to query images
+% 
+% Before running this, you should run extractFeature.m first
+% Please note that imgpath in extractFeature and cbir_threshold must be
+% on the similar path
+%
+% Author: Arwan Ahmad Khoiruddin
+% Date modified: 30 March 2016
+% %=======================================================================
 
 % folder for the images
 imgpath = 'image.orig';

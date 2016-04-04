@@ -10,7 +10,7 @@ function colorMoments = colorMoment(image)
 % %=======================================================================
 
 % convert from rgb to hsv
-Input_Im = rgb2hsv(image);
+image = rgb2hsv(image);
 
 % extract color channels
 H = double(image(:, :, 1));
